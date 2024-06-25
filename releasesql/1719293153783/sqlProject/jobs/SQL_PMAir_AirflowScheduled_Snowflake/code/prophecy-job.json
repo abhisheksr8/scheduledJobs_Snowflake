@@ -1,0 +1,183 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "60",
+    "jobId" : "jobs/SQL_PMAir_AirflowScheduled_Snowflake",
+    "name" : "SQL_PMAir_AirflowScheduled_Snowflake",
+    "dagName" : "CbRBtZTt09OJ_cjRDCFjSQ_",
+    "schedule" : "*/5 5-6 25 6 *",
+    "enabled" : true,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "pool" : "9Wjc_il4",
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "65",
+      "name" : "dev_airflow_253"
+    }, {
+      "id" : "63",
+      "name" : "dev_airflow"
+    }, {
+      "id" : "66",
+      "name" : "dev_airflow_mwaa"
+    }, {
+      "id" : "60",
+      "name" : "dev_airflow_prophecy_managed",
+      "trialStartDate" : 1702453157825
+    }, {
+      "id" : "2157",
+      "name" : "test-mwaa"
+    }, {
+      "id" : "2156",
+      "name" : "new-mwaa"
+    }, {
+      "id" : "4240",
+      "name" : "55"
+    }, {
+      "id" : "4811",
+      "name" : "prophecy_managed_expired_donotdelete",
+      "trialStartDate" : 1716972474835
+    }, {
+      "id" : "3462",
+      "name" : "test_airflow"
+    }, {
+      "id" : "5829",
+      "name" : "Automation_python_AirflowOpenSource",
+      "artifactsLocation" : "/mnt/airflow/artifacts"
+    }, {
+      "id" : "5836",
+      "name" : "Automation_scala_AirflowOpenSource",
+      "artifactsLocation" : "/mnt/airflow/artifacts"
+    }, {
+      "id" : "3939",
+      "name" : "sx"
+    }, {
+      "id" : "5823",
+      "name" : "Automation_Airflow_MWAA_Custom_URL_Fabric"
+    } ],
+    "maxActiveRuns" : 1,
+    "endDate" : "2034-01-12",
+    "catchup" : false,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "lZr28eBjDEv_NsAJtmLM6$$ohsFoYv9z70iePu76pUW-" : {
+      "id" : "lZr28eBjDEv_NsAJtmLM6$$ohsFoYv9z70iePu76pUW-",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -580,
+        "y" : -200
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "8ajHRdFt2DafI6H0sp4LV$$FMaukr0RAhYtqAkVkFl0d",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "hDTsRPeZ4lZwYA-qwW_qd$$viVNsQSoJN6rsQsVzN8UB",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "entityId" : null,
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : true,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : null,
+        "vars" : null,
+        "isAdhocRunFromSameProject" : null,
+        "customVersion" : true,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "22835",
+        "runMode" : "project",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : true,
+        "entityName" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "snapshot" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : null,
+        "printerWidth" : null,
+        "sqlFabricId" : "59",
+        "gitEntityValue" : "main",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : null,
+        "loadingSnapshots" : false,
+        "gitEntityValueBranch" : "main",
+        "noAnonymousUsageStats" : true,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+          "value" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+          "id" : "22835/.prophecy/metadata/sqlmodels/testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+          "name" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null,
+        "entityKind" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}
