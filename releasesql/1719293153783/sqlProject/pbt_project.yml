@@ -1,6 +1,6 @@
 name: Automation_Snowflake_Project_AirflowScheduled
 description: ''
-version: 0.0.1
+version: 2.0.0
 author: null
 language: sql
 buildSystem: ''
