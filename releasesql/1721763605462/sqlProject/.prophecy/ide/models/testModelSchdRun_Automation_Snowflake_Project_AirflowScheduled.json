@@ -1,0 +1,170 @@
+{
+  "id" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+  "metainfo" : {
+    "label" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled##q5mVmK7F" : {
+      "id" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled##q5mVmK7F",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xtMKH9D4",
+          "schema" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "c_int64",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "c_bignumeric",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_float64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_bool",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled"
+        } ],
+        "outputs" : [ {
+          "id" : "HIgF49c3",
+          "schema" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "C_INT64",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "C_BIGNUMERIC",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "C_STRING",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "C_FLOAT64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "C_BOOL",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "KuXfQiSMDgClH4__9Jcaw" : {
+      "id" : "KuXfQiSMDgClH4__9Jcaw",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+        "slug" : "testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+        "x" : -511.6000061035156,
+        "y" : -154.39999389648438,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "A7zCoVh7Eus2ESmqbkLTt",
+          "schema" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "c_int64",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "c_bignumeric",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_float64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_bool",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "qHxVfge6mE9KpP_NQGvrY",
+    "source" : "KuXfQiSMDgClH4__9Jcaw",
+    "sourcePort" : "A7zCoVh7Eus2ESmqbkLTt",
+    "target" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled##q5mVmK7F",
+    "targetPort" : "xtMKH9D4"
+  } ],
+  "component" : "Model"
+}
