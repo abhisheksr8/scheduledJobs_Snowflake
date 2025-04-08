@@ -1,0 +1,141 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "16",
+    "jobId" : "jobs/SQL_PMAir_AirflowScheduled_Snowflake",
+    "name" : "SQL_PMAir_AirflowScheduled_Snowflake",
+    "dagName" : "PAx1fZ14M7anHHlGG5F2Bg_",
+    "schedule" : "*/5 5-6 8 4 *",
+    "enabled" : true,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "pool" : "BOQhdxeL",
+      "do_xcom_push" : true
+    },
+    "maxActiveRuns" : 1,
+    "endDate" : "2034-09-17",
+    "catchup" : false,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "qU_P3f_7_WHiXVAjGx-g_$$PefUfpSN_gH81xT5wM-9H" : {
+      "id" : "qU_P3f_7_WHiXVAjGx-g_$$PefUfpSN_gH81xT5wM-9H",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -580,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "yxtXlilegfYzc5n8UScSA$$UbaWcX8ITpItl3-NSxyC9",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "lxwuEVQje0AXglbFVWMdC$$mIkJhXOZZBd-BE8S1pBwG",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "entityId" : null,
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : true,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "vars" : null,
+        "isAdhocRunFromSameProject" : null,
+        "customVersion" : true,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "11387",
+        "runMode" : "project",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : true,
+        "entityName" : null,
+        "noCacheSelectedOnly" : null,
+        "gitEntityValueTag" : null,
+        "noFavorState" : null,
+        "snapshot" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : null,
+        "printerWidth" : null,
+        "sqlFabricId" : "5",
+        "gitEntityValue" : "main",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "gitEntityValueCommit" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : null,
+        "sqlProjectType" : "snowflake",
+        "loadingSnapshots" : false,
+        "gitEntityValueBranch" : "main",
+        "noAnonymousUsageStats" : true,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+          "value" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+          "id" : "11387/.prophecy/metadata/sqlmodels/testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+          "name" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null,
+        "entityKind" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}

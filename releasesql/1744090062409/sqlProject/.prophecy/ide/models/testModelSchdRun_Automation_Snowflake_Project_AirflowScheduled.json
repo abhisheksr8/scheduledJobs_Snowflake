@@ -1,0 +1,84 @@
+{
+  "id" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+  "metainfo" : {
+    "label" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled##oMSW3SeO" : {
+      "id" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled##oMSW3SeO",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "momevbgD",
+          "slug" : "testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled"
+        } ],
+        "outputs" : [ {
+          "id" : "XTwdRDUl",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "D91OX08tRST7VX-w_M0Pq" : {
+      "id" : "D91OX08tRST7VX-w_M0Pq",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+        "slug" : "testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+        "x" : -520,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled",
+          "sourceType" : "Seed",
+          "sourceName" : "",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "S31AcgpOXwTLNDWKCLZ0G",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "0micf6ER79LBgiGAq7otq",
+    "source" : "D91OX08tRST7VX-w_M0Pq",
+    "sourcePort" : "S31AcgpOXwTLNDWKCLZ0G",
+    "target" : "testModelSchdRun_Automation_Snowflake_Project_AirflowScheduled##oMSW3SeO",
+    "targetPort" : "momevbgD"
+  } ],
+  "component" : "Model"
+}

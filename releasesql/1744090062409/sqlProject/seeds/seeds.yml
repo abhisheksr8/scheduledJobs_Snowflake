@@ -1,0 +1,5 @@
+---
+version: 2
+seeds:
+- name: "testSeedSchdRun_Automation_Snowflake_Project_AirflowScheduled"
+  columns: []
